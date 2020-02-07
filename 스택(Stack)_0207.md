@@ -224,3 +224,27 @@ print(fibo1(6))
 
 #### 연습문제3
 
+
+
+```python
+Data = list(map(int, input().split()))
+howmany = len(Data)>>1
+mymap = [[0]*howmany for _ in range(howmany)]
+visited = [0] * howmany
+
+def DFS(here):
+    print(here)
+    visited[here] = True
+    for next in range(0, howmany):
+        if mymap[here][next] and not visited[next]:
+            DFS(next)
+
+for i in range(howmany):
+    start = Data[i*2]
+    stop = Data[i*2+1]
+    mymap[start][stop] = 1
+    mymap[stop][start] = 1
+
+DFS(1)
+```
+
