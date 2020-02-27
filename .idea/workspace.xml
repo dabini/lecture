@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fab3543e-3117-4bba-8d26-cb9e05641451" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BFS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/04_data_structure_02-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/04_data_structure_02-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_17_stack2.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_17_stack2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_data_structure_02.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04_data_structure_02.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_data_structure_03.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04_data_structure_03.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,62 +11,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1261165953">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="5505" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="5505" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02_17_stack2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2850">
+            <state relative-caret-position="464">
               <caret line="207" selection-start-line="207" selection-end-line="221" />
-              <folding>
-                <marker date="1582154952760" expanded="true" signature="1306:1313" ph="..." />
-                <marker date="1582154952760" expanded="true" signature="2157:2164" ph="..." />
-                <marker date="1582154952760" expanded="true" signature="3636:4130" ph="..." />
-                <marker date="1582154952760" expanded="true" signature="4524:4531" ph="..." />
-                <marker date="1582154952760" expanded="true" signature="4725:4732" ph="..." />
-                <marker date="1582154952760" expanded="true" signature="4888:4895" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/practice.py">
+        <entry file="file://$PROJECT_DIR$/BFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="103" selection-end-column="35" />
+            <state relative-caret-position="228">
+              <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -89,9 +45,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <marker date="1582102683551" expanded="true" signature="17:24" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -101,11 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <marker date="1582102368741" expanded="true" signature="15:20" ph="..." />
-                <marker date="1582102368741" expanded="true" signature="64:69" ph="..." />
-                <marker date="1582102368741" expanded="true" signature="163:168" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -148,14 +96,14 @@
         <option value="$PROJECT_DIR$/02_19.py" />
         <option value="$PROJECT_DIR$/02_17_stack2.py" />
         <option value="$PROJECT_DIR$/practice.py" />
+        <option value="$PROJECT_DIR$/BFS.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="39" />
-    <option name="y" value="192" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -164,7 +112,8 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SWEA" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -179,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.practice">
+  <component name="RunManager" selected="Python.BFS">
     <configuration name="02_17_stack2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lecture" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,19 +150,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02_19" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="BFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lecture" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\jdb96\AppData\Local\Programs\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_19.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BFS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,18 +236,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.02_17_stack2" />
-      <item itemvalue="Python.02_19" />
       <item itemvalue="Python.calc" />
       <item itemvalue="Python.calc_practice" />
       <item itemvalue="Python.practice" />
+      <item itemvalue="Python.BFS" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.BFS" />
         <item itemvalue="Python.practice" />
         <item itemvalue="Python.02_17_stack2" />
         <item itemvalue="Python.calc_practice" />
         <item itemvalue="Python.calc" />
-        <item itemvalue="Python.02_19" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +274,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="192" width="974" height="1047" extended-state="1" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -333,7 +282,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37828946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37657657" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,9 +295,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -391,10 +337,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
+    <entry file="file://C:/Program Files/Python35/Lib/codecs.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -405,15 +352,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/02_19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/calc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <marker date="1582102368741" expanded="true" signature="15:20" ph="..." />
-            <marker date="1582102368741" expanded="true" signature="64:69" ph="..." />
-            <marker date="1582102368741" expanded="true" signature="163:168" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -431,42 +380,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02_19.py">
+    <entry file="file://$PROJECT_DIR$/practice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <marker date="1582102683551" expanded="true" signature="17:24" ph="..." />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02_17_stack2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
+        <state relative-caret-position="464">
           <caret line="207" selection-start-line="207" selection-end-line="221" />
-          <folding>
-            <marker date="1582154952760" expanded="true" signature="1306:1313" ph="..." />
-            <marker date="1582154952760" expanded="true" signature="2157:2164" ph="..." />
-            <marker date="1582154952760" expanded="true" signature="3636:4130" ph="..." />
-            <marker date="1582154952760" expanded="true" signature="4524:4531" ph="..." />
-            <marker date="1582154952760" expanded="true" signature="4725:4732" ph="..." />
-            <marker date="1582154952760" expanded="true" signature="4888:4895" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+    <entry file="file://$PROJECT_DIR$/BFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="103" selection-end-column="35" />
+        <state relative-caret-position="228">
+          <caret line="12" column="31" lean-forward="true" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
