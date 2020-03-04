@@ -93,3 +93,23 @@ y1 모형은 And gate
 
 y2 모형은 -OR gate
 
+
+
+#### 3. Forward propagation
+
+![](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200304222556391.png)
+
+​				         입력레이어 	  	   히든레이어 			 출력레이어
+
+
+
+![](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200304222702730.png)
+
+​							입력 레이어를 매트릭스 형태로 만듬
+
+​								=> 다중회귀분석모형과 비슷한 형태
+
+​		![](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200304222750526.png)
+
+
+
