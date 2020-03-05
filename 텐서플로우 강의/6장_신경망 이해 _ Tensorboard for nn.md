@@ -77,7 +77,7 @@ with tf.Session() as sess:
 
 
 
-3) TensorBoard for XOR NN
+3)**TensorBoard for XOR NN**
 
 - 5 steps of using Tensorboard
 
@@ -96,7 +96,7 @@ with tf.Session() as sess:
   2. Merge all summaries
 
      ``` python
-     summary = tf.summary.merge_all
+     summary = tf.summary.merge_all()
      ```
 
      => 쌓아두고자 하는 단계
@@ -111,11 +111,13 @@ with tf.Session() as sess:
      writer.add_graph(sess.graph)
      ```
 
+     => 저장할 위치 설정
+
      => 쌓아둔 것을 파일로 떨어뜨림
 
      
 
-  4. Run Summary merge and add_summary
+  4. Run Summary merge and add_summary(실행단계)
 
      ``` python
      s, _ = see.run([summary, optimizer], feed_dict = feed_dict)
@@ -133,6 +135,8 @@ with tf.Session() as sess:
      ```python
      tensorboard --logdir=./logs
      ```
+
+     => 위치에 내용들을 tensorboard로 실행(상위폴더를 실행해야 여러 버전을 한 번에 그래프로 볼 수 있음)
 
      
 
@@ -199,5 +203,84 @@ hypothesis_hist = tf.summary.histogram("hypothesis", hypothesis)
 
 
 
+4. Merge Summaries create writer after creating session
 
+   ```python
+   #Summary
+   summary = tf.summary.merge_all()
+   
+   #initialize
+   sess = tf.Session()
+   sess.run(tf.gobal_variable_initializer())
+   
+   #Create summary writer
+   writer = tf.summary.FileWriter(TB_SUMMARY_DIR)
+   wirter.add_graph(sess.graph) #Add graph in tensorboard
+   ```
+
+
+
+5. Run merged sumary and write(and summary)
+
+   ```python
+   s, _ = see.run([summary, optimizer], feed_dict = feed_dict)
+   writer.add_summary(s, global_step = global_step)
+   global_step +=1
+   ```
+
+   => merge했던 값을 하나씩 돌리면서 파일에 씀
+
+
+
+6. Launch tensorboard(local)
+
+   ```python
+   writer = tf.summary.FileWriter("./logs/xor_logs")
+   ```
+
+   => 파일 디렉토리를을 정확히 기억해야함
+
+   ```python
+   #결과창
+   $ tensorboard --logdir=./logs/xor_logs
+   
+   Starting TensorBoard b'41' on port 6006
+   (You can navigate to http://127.0.0.1:6006)
+   ```
+
+   ```python
+   ssh-L local_port:
+   ```
+
+   
+
+![image-20200305224433765](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200305224433765.png)
+
+
+
+![image-20200305224612606](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200305224612606.png)
+
+
+
+7. Multiple runs
+
+   > learing_rate = 0.1 VS learning_rate = 0.01
+
+   ![image-20200305224745433](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200305224745433.png)
+
+   
+
+   
+
+   ![image-20200305224941125](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200305224941125.png)
+
+   logs/0.1
+
+   logs/0.01
+
+   ==> tensorboard를 불러올 때는 logs를 불러와서 0.1과 0.01을 같이 보여줌
+
+   
+
+![image-20200305225336643](C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200305225336643.png)
 
