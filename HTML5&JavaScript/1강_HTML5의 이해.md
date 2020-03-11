@@ -163,26 +163,25 @@
     - 시작태그와 마침태그로 요소의 범위를 지정한다. 
 
       <p>이것은 단락 입니다.</p> 
-
-      <img src="C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200309103419107.png" alt="image-20200309103419107" style="zoom:80%;" />
-
+<img src="C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200309103419107.png" alt="image-20200309103419107" style="zoom:80%;" />
       
 
-    - 마침태그가 없이 단독으로 사용되는 요소도 있다.
+      
+- 마침태그가 없이 단독으로 사용되는 요소도 있다.
       <img src="C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200309103457381.png" alt="image-20200309103457381" style="zoom:80%;" />
-
-       <br>,  <img>, <meta> 등 
-
-  - 요소의 속성 기술
-
-    <img src="C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200309103527246.png" alt="image-20200309103527246" style="zoom:80%;" />
-
-    - 요소의 속성은 속성명 = “속성값” 형식으로 기술한다.
-
-       <img src=”img/logo.jpg” alt=”Company Logo”>
-
     
-
+   <br>,  <img>, <meta> 등 
+    
+- 요소의 속성 기술
+  
+  <img src="C:\Users\jdb96\AppData\Roaming\Typora\typora-user-images\image-20200309103527246.png" alt="image-20200309103527246" style="zoom:80%;" />
+  
+  - 요소의 속성은 속성명 = “속성값” 형식으로 기술한다.
+  
+     <img src=”img/logo.jpg” alt=”Company Logo”>
+  
+  
+  
 - HTML의 구조
 
 <!Doctype html> <html> <head> </head> <body> </body> </html>
