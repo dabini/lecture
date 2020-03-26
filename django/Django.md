@@ -28,7 +28,7 @@
 - 모델 뷰 컨트롤러
   - 소프트웨어공학에서 사용되는 소프트웨어 디자인 패턴
 
-
+![](D:\lecture\django\django_work.png)
 
 ![](D://lecture/django/django.png)
 
