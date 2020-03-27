@@ -193,3 +193,63 @@ def lotto(request):
 
 - context 딕셔너리의 key값을 적으면 출력된다.
 
+
+
+## Variable routing
+
+> url의 특정 위치의 값을 변수로 활용
+
+### 1. urls.py
+
+```python
+path('hi/<str:name>/', views.hi),
+path('add/<int:a>/<int:b>', views.add),
+```
+
+
+
+### 2. views.py
+
+```python
+def hi(request, name):
+    context = {
+        'name': name
+    }
+    return render(request, 'hi.html', context)
+```
+
+
+
+### 3. template
+
+```html
+<h1>
+    안녕, {{name}}
+</h1>
+```
+
+
+
+## DTL
+
+> 템플릿파일(html)은 django template language를 통해 구성할 수 있다.
+
+
+
+1. 출력
+
+   ```bash
+   {{ menu }}
+   {{ menu.0 }} #인덱스 접근 방법
+   ```
+
+2. 문법 `{%%}`
+
+   ```html
+   {%for menu in menupan %}
+   
+   {% endfor %}
+   ```
+
+   
+
