@@ -253,3 +253,222 @@ def hi(request, name):
 
    
 
+3. 주석 `{# #}`
+
+   ```html
+   {# 주석입니다. #}
+   ```
+
+
+
+### 반복문
+
+```html
+{% for reply in replies %}
+	<li>{{ reply }}</li>
+{% endfor %}
+```
+
+- `{{ forloop.counter }}`
+
+  1부터 수 세기
+
+- `{{ forloop.counter0 }}`
+
+  0부터 수 세기
+
+- `{% empty %}`
+
+
+
+### 조건문
+
+```html
+{% if user == 'admin' %}
+	<p>관리자 입니다.</p>
+{% else %}
+	<p>권한이 없습니다.</p>
+{% endif %}
+```
+
+
+
+#### built-in tag, filter
+
+- 공식문서 확인
+
+  https://docs.djangoproject.com/en/3.0/topics/http/shortcuts/
+
+```html
+{{ content|length }}
+{{ content|truncatechars:10 }}
+```
+
+
+
+## Template 확장
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django 기초 - pages</title>
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+    <h1>Django 기초 문법 학습</h1>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
+```
+
+
+
+```html
+{% extends 'base.html' %}
+{% block css %}
+<style>
+    h1{
+        color : blue;
+    }
+</style>
+{% endblock %}
+    {% block body %}
+    <h1>{{id}}번째 글입니다. </h1>
+    <p>{{content}}</p>
+    <p>{{content|length}}글자</p>
+    <p>{{content|truncatechars:10}}</p>
+    <hr>
+    <!-- 댓글 출력 반복 -->
+    <ul>
+    {% for reply in replies %}
+        <li>{{reply}}</li>
+    {% endfor %}
+    </ul>
+    <ul>
+    {% for reply in replies %}
+        <li>댓글{{forloop.counter}}: {{reply}}</li>
+    {% endfor %}
+    </ul>
+    <ul>
+    {% for reply in replies %}
+        <li>댓글{{forloop.counter}}: {{reply}}</li>
+        { % empty %}
+        <p>댓글이 없어요! 작성해주세요.. ㅠㅠ</p>
+    {% endfor %}
+    </ul>
+
+    <ul>
+        {%if user == 'admin'%}
+            <p>수정, 삭제</p>
+        {% else %}
+            <p>관리자 권한이 없습니다.</p>
+        {% endif %}
+    </ul>
+{% endblock %}
+```
+
+
+
+
+
+## Template 설정
+
+```python
+#django_intro/settings.py Line#55
+TEMPLATES = [
+    {
+        #DTL 엔진을 활용, jinja2 등으로 변경 가능함.
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        #APP 내에 있는 폴더가 아닌 
+        'DIRS': [],
+        # APP_DIRS: True 인경우, 등록된 app(INSTALLED_APP)의 디렉토리에 있는 templates 폴더를 템플릿 폴더로 활용하겠다라는 의미!
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+```
+
+
+
+#### Form을 통한 요청 처리
+
+#### 개요
+
+1. 사용자들로부터 값을 받아서(`boards/new/`)
+2. 이를 단순 출력하는 페이지 구성(`boards/complete`)
+
+
+
+##### 1. 사용자에게 form 양식 제공
+
+1. url 지정
+
+```python
+path('new', views.new)
+```
+
+
+
+2. view 함수 생성
+
+   ```python
+   def new(request):
+       return render(request, 'boards/new.html')
+   ```
+
+3. template
+
+   ```html
+   <form action="/boards/complete/">
+       제목: <input type="text" name="title"
+   </form>
+   ```
+
+   - form 태그에는 `action` 속성을 정의한다.
+     - 사용자로부터 내용을 받아서 처리하는 url
+   - input 태그에는 `name`속성을 통해 사용자가 입력한 내용을 담을 변수 이름을 지정한다.
+   - url 예시: `/boards/complete/?title=제목제목`
+
+
+
+##### 2. 사용자 요청 처리
+
+1. urls.py 정의
+
+   ```python
+   path('/boards/complete/', views.complete)
+   ```
+
+2. views.py
+
+   ```python
+   def complete(request):
+       title = request.GET.get('title')
+       context = {
+           'title' : title,
+       }
+       return render(request, 'boards/complete.html', context)
+   ```
+
+   - request에는 요청과 관련된 정보들이 담긴 객체가 저장되어 있다.
+
+3. template
+
+   ```html
+   {{ title }}
+   ```
+
+   
