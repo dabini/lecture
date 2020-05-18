@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    button {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <button id="myButton" onclick="confirmMessage()">얍</button>
+
+  <script>
+    const myButton = document.querySelector('#myButton')
+    function confirmMessage(){
+      confirm('얍?')
+    }
+    //요소.addEvenetListener('이벤트', 이벤트 발생시 실행)
+    myButton.addEventListener('click', confirmMessage)
+    
+    myButton.addEventListener('click', function(event) {
+      confirm('얍!')
+    })
+  </script>
+</body>
+</html>
