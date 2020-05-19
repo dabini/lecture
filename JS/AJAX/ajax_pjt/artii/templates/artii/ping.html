@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ART</title>
+</head>
+<body>
+  <label for="userInput">input</label>: 
+  <input id="userInput" type="text">
+  <div id="resultArea">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    //1. input#userInput의 'change'의 이벤트 떄
+    // value 값을 AJAX 요청으로 'art/pong'으로 보낸다.
+    const userInput = document.querySelector('#userInput')
+    userInput.addEventListener('input', function(event){
+      
+      // 2. pong 이 받아서 다시 JSON으로 응답을 보낸다.
+      const inputText = userInput.value
+      
+      // axios.get(`/art/pong/?inputText=${inputText}`)
+      axios.get('/artii/pong/', {
+        params : {
+          inputText : inputText,
+        }
+      })
+      .then(function(res){
+        // 3. 응답 JSON의 내용을 div#resultArea에 표시한다.
+        const resultArea = document.querySelector('#resultArea')
+        resultArea.innerText = res.data.content
+      })
+    })
+    
+
+
+  </script>
+</body>
+</html>
