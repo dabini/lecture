@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% load socialaccount %}
+
+{% block body %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <button>login</button>
+    <a href="{% provider_login_url 'google' %}" class="btn btn-primary">GOOGLE LOGIN</a>
+  </form>
+{% endblock %}

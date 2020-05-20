@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # pip
     'django_extensions',
     'bootstrap4',
+    'bootstrap_pagination',
     
     #django origin 
     'django.contrib.admin',
@@ -154,7 +155,10 @@ SOCIALACCOUNT_PROVIDERS = {
             'email',
         ],
         'AUTH_PARAMS' : {
-            'access_type' : 'oline',
+            'access_type' : 'online',
         }
     }
 }
+
+#google 로그인 한 뒤, redirect 하는 페이지
+LOGIN_REDIRECT_URL = '/aticles/'
