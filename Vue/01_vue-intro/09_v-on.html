@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VueJS</title>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ message }}</h1>
+    <button @click="alertWarning">Alert Warning</button>
+    <button @click="alertMessage">Alert Message</button>
+    <button @click="changeMessage">Change Message</button>
+    <hr>
+    <input @keyup.enter="onInputChange" type="text">
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el : "#app",
+      data : {
+        message : "Hello Vue",
+      },
+      methods : {
+        alertWarning : function() {
+          alert("Warning")
+        },
+        alertMessage() { //sytactic Sugar: 위와 아래의 문법이 같음
+          alert(this.message)
+        },
+        changeMessage(){
+          this.message = 'Changed Message'
+        },
+        onInputChange(event){
+          // if (event.key=="Enter"){
+          this.message = event.target.value
+          // }
+        }
+      }
+    })
+  </script>
+</body>
+</html>
