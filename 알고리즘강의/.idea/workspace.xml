@@ -76,7 +76,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/다익스트라.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-383">
+            <state relative-caret-position="-247">
               <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
@@ -140,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="12" />
     <option name="y" value="244" />
     <option name="width" value="981" />
@@ -308,15 +308,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="163" width="654" height="688" extended-state="1" />
-    <editor active="true" />
+    <frame x="8" y="163" width="654" height="688" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24959481" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32553956" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32553956" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39928058" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -481,7 +480,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/다익스트라.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383">
+        <state relative-caret-position="-247">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
