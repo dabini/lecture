@@ -20,6 +20,12 @@
 
 
 
+#### 3) updated
+
+- data({})가 바뀌고 나서, 화면이 다시 렌더된 이후 시점
+
+
+
 #### JS 에서 볼 수 있는 비동기 요청
 
 - Axios
@@ -32,5 +38,10 @@
   setTimeout(() => {}, 500)
   ```
 
-  
+
+
+#### Scrollmonitor
+
+- Properties
+  - `elementWatcher.isFullyInViewport` - true if the entire element is visible
 

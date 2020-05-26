@@ -20,9 +20,10 @@
       <img :src="photo.thumbnailUrl" :alt="photo.title">
     </div>
     <button @click="scrollToTop" class="button-bottom">^</button>
+    
+    <div id="bottomSensor"></div>
   </div>
   <!-- HTML이 Vue 인스턴스와 연결된 순간부터, LIFE CYCLE hook의 영향을 받는다. -->
-  <div id="bottomSensor"></div>
   
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -50,6 +51,7 @@
             })
             .catch(err => console.error(err))
         },
+
         addScrollWatcher : function() {
           const bottomSensor = document.querySelector('#bottomSensor')
           const watcher = scrollMonitor.create(bottomSensor)
@@ -60,10 +62,20 @@
             }, 500)
           })
         },
+
         scrollToTop : function() {
           window.scroll(0, 0) //window는 전역객체라서 scroll(0, 0)으로만 써도 됨.
-        }
+        },
+
+        loadUntilViewportIsFull : function() {
+          const bottomSensor = document.querySelector('#bottomSensor')
+          const watcher = scrollMonitor.created(bottomSensor)
+          if (watcher.isFullyInViewport) {
+            this.getPhotos()
+          }
+        },
       },
+      
       created : function() {
         // 초기화 이후 AJAX 모듈을 보내기 좋은 hook /시점
         this.getPhotos()
@@ -72,7 +84,12 @@
       mounted: function() {
         // DOM과 Vue 인스턴스가 연동이 완료되고 난 이후에 실행할 일들        // console.log('DOM에 부착되었다.')
         this.addScrollWatcher()
-      }
+      },
+      
+      updated: function() {
+        // data({})가 바뀌고 나서, 화면이 다시 렌더된 이후 시점
+        this.loadUntilViewportIsFull()
+      },
     })
   </script>
 </body>
