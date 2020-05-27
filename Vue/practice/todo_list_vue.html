@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .completed {
+      text-decoration: line-through;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+    <div id="app">
+      <select v-model="status">
+        <option value="all">전체</option>
+        <option value="active">진행중</option>
+        <option value="completed">완료</option>
+      </select>
+      <ul>
+        <li v-for="todo in computedTodosByStatus " :class="{ completed: todo.completed }" :key="todo.id">
+          <input type="checkbox" v-model="todo.completed">
+          {{ todo.content }}
+          <!-- {{ todo.completed }} -->
+        </li>
+        <!-- <li v-else @click="check(todo)">[완료!]</li> -->
+      </ul>
+      <input type="text" v-model="newTodo" @keyup.enter='addTodo'>
+      <button @click="addTodo">+</button>
+      <br>
+      <button @click="clearCompleted">완료된 할일 지우기</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el : "#app",
+        data : {
+          todos: [
+            {
+              id : 1,
+              content :'Django PJT',
+              completed: false
+            },
+            {
+              id : 2,
+              content :'JS 복습',
+              completed: false
+            },
+            {
+              id : 3,
+              content : 'Vue 과제',
+              completed: false
+            },
+          ],
+          newTodo : '',
+          status : 'all',
+        },
+        methods: {
+          check : function(todo) {
+            todo.completed = !todo.completed
+          },
+          addTodo : function() {
+            this.todos.push({
+              id: Date.now(),
+              content: this.newTodo,
+              completed : false
+            })
+            this.newTodo = ''
+          },
+          clearCompleted : function() {
+            const notCompletedTodos = this.todos.filter(todo => {
+              return !todo.completed
+            })
+            this.todos = notCompletedTodos
+          },
+          // todosByStatus: function() {
+          //   if (this.status === 'active') {
+          //     return this.todos.filter(todo=> {
+          //       return !todo.completed
+          //     })
+          //   }
+          //   if (this.status === 'completed') {
+          //     return this.todos.filter( todo => {
+          //       return todo.completed
+          //     })
+          //   }
+          //   return this.todos
+          // }
+        },
+        computed : {
+          computedTodosByStatus: function() {
+            if (this.status === 'active') {
+              return this.todos.filter(todo=> {
+                return !todo.completed
+              })
+            }
+            if (this.status === 'completed') {
+              return this.todos.filter( todo => {
+                return todo.completed
+              })
+            }
+            return this.todos
+          }
+        }
+      })
+    </script>
+</body>
+</html>
