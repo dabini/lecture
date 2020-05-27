@@ -92,4 +92,15 @@
   $ npm i axios
   ```
 
-  
+
+
+
+### 6. Router
+
+- 라우터시작하기
+
+  ```bash
+  $ vue add router
+  ```
+
+  => App.vue 등 몇 개의 파일이 새로 생성되기 때문에 project 시작할 때 같이 시작해주는 것이 편리하다.

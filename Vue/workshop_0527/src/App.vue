@@ -1,21 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/contact">Contact</router-link> |
-      <router-link to="/ping">Ping</router-link> |
-
+      <router-link to="/">Index</router-link> |
+      <router-link to="/lunch">Lunch</router-link> |
+      <router-link to="/lotto">Lotto</router-link>
     </div>
     <router-view/>
   </div>
 </template>
-
-<script>
-export default {
-  
-}
-</script>
 
 <style>
 #app {
