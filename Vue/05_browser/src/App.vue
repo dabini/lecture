@@ -10,7 +10,7 @@ import axios from 'axios'
 import SearchBar from "./components/SearchBar.vue"
 import VideoList from  "./components/VideoList.vue"
 
-const API_KEY = "AIzaSyBGbJ5rXX0PXq98f0fCLq8DKmUxyPqCGsA"
+const API_KEY = "구글API"
 const API_URL = 'https://www.googleapis.com/youtube/v3/search'
 
 export default {
