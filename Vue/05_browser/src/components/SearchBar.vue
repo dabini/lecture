@@ -17,5 +17,12 @@ export default {
 </script>
 
 <style>
+    div.search-bar {
+        text-align: center;
+        margin: 20px;
+    }
 
+    div.search-bar > input {
+        width: 75%;
+    }
 </style>
