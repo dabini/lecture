@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4c377ac-7c38-4ca4-80ec-4f0abc81009b" name="Default Changelist" comment="" />
+    <list default="true" id="f4c377ac-7c38-4ca4-80ec-4f0abc81009b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../JS/ES/arrayHelperMethod.html" beforeDir="false" afterPath="$PROJECT_DIR$/../JS/ES/arrayHelperMethod.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/04_props-emit/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Vue/04_props-emit/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/components/SearchBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/components/VideoDetail.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/components/VideoList.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/components/VideoListItem.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vue/05_browser/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../순열조합/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../순열조합/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/dfs_stack.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="15" lean-forward="true" selection-start-line="2" selection-end-line="3" selection-end-column="31" />
+              <caret line="11" column="15" selection-start-line="2" selection-end-line="3" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -49,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mst.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
+            <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="3" />
             </state>
           </provider>
@@ -58,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mst_prim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="495">
+              <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -67,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Kruskal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-504">
+            <state relative-caret-position="270">
               <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
             </state>
           </provider>
@@ -76,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/다익스트라.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <state relative-caret-position="113">
+              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -140,9 +159,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="244" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-24" />
+    <option name="y" value="6" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -308,7 +327,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="163" width="654" height="688" extended-state="0" />
+    <frame x="-16" y="4" width="654" height="688" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24959481" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -432,7 +451,35 @@
     <entry file="file://$PROJECT_DIR$/dfs_stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="2" selection-end-line="3" selection-end-column="31" />
+          <caret line="11" column="15" selection-start-line="2" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/power_set.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mst.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mst_prim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kruskal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -450,38 +497,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/power_set.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mst.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kruskal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-504">
-          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mst_prim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/다익스트라.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="113">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
         </state>
       </provider>
     </entry>

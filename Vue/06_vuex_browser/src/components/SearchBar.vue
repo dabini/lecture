@@ -1,18 +1,19 @@
 <template>
   <div class="search-bar">
-      <input @keypress.enter="onInput">
+      <input @keypress.enter="fetchVideos">
   </div>
 </template>
 
 <script>
-export default {
+import { mapActions } from 'vuex'
+
+export default { 
     name: "SearchBar",
     methods : {
-        onInput(event) {
-            this.$emit('input-change', event.target.value)
-        }
+        ...mapActions([
+            'fetchVideos'
+        ])
     }
-
 }
 </script>
 

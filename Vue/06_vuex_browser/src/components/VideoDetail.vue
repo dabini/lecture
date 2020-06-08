@@ -1,32 +1,31 @@
 <template>
-    <div v-if="video" class="col-lg-8">
+    <div v-if="$store.state.selectedVideo" class="col-lg-8">
         <div class="embed-responsive embed-responsive-16by9">
             <iframe 
                 class="embed-responsive-item"
                 :src="videoUrl" 
                 allowfullscreen>
             </iframe>
-        
         </div>
         <div class="details">
-            <h4 v-html="video.snippet.title"></h4>
-            <!-- <h4>{{ video.snippet.title }}</h4> -->
-            <p>{{ video.snippet.description }}</p>
+            <h4 v-html="videoTitle"></h4>
+            <p>{{ videoDescription }}</p>
         </div>
     </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
     name: "VideoDetail",
-    props: {
-        video : Object,
-    },
     computed: {
-        videoUrl() {
-            return `https://www.youtube.com/embed/${this.video.id.videoId}`
-        }
-    },
+        ...mapGetters([
+            'videoUrl',
+            'videoTitle',
+            'videoDescription',
+        ])
+    }
 }
 </script>
 

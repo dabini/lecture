@@ -19,18 +19,27 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #DRF
-    'rest_framework',
-    
-    'articles',
-    'accounts',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites', #allauth
+    #DRF
+    'rest_framework',
+    'rest_framework.authtoken',
+
+    # rest_auth
+    'rest_auth',
+    'allauth',
+    'allauth.account',
+    'rest_auth.registration',
+
+    # My app
+    'articles',
+    'accounts',
+
 ]
 
 MIDDLEWARE = [
@@ -114,3 +123,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'accounts.User'
+
+SITE_ID = 1
+
+#django Auth settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ]
+}
